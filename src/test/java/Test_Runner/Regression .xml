@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression suite">
+    <test name="regression test">
+        <classes>
+            <class name="T01_Testcaseloginpage"/>
+            <class name="T02_landingTest"/>
+            <class name="T03_Yourcard"/>
+            <class name="TC04_Checkout"/>
+            <class name="T05_Overview">
+
+
+            </class>
+        </classes>
+    </test>
+</suite>

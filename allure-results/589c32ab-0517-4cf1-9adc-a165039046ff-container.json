@@ -1,0 +1,1 @@
+{"uuid":"589c32ab-0517-4cf1-9adc-a165039046ff","name":"T03_Yourcard.finish","children":["a13c3aec-8746-475c-96c5-27e0f73af01e"],"description":"","befores":[],"afters":[{"name":"finish","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1756315065185,"stop":1756315065668}],"start":1756315065183,"stop":1756315065668}

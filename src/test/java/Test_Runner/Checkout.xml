@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Checkoutsuite">
+    <test name="Checkout test">
+        <classes>
+            <class name="TC04_Checkout">
+
+            </class>
+        </classes>
+    </test>
+</suite>

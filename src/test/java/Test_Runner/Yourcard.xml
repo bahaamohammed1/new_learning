@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="YourcardSuite">
+    <test name="Your card test">
+        <classes>
+            <class name="T03_Yourcard">
+
+            </class>
+        </classes>
+    </test>
+</suite>
