@@ -5,8 +5,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.P01_Loginpage;
-import page.P02_landingpage;
+import page.P02_Homegpage;
 import page_bassis.DataUtilities;
+import page_bassis.Utility;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -30,7 +31,8 @@ public class TC04_Checkout {
         new P01_Loginpage(driver).enterusername(DataUtilities.getjsondata("ValidData", "username"))
                 .pasword(DataUtilities.getjsondata("ValidData", "password")).
                 click().clickoncarticon().checkoutcart();
-        Assert.assertTrue(new P02_landingpage(driver).compring());
+        Assert.assertTrue(new P02_Homegpage(driver).compring());
+        Utility.takingscreenshot(driver, "Checkout");
 
         // Assert.assertEquals(driver.getCurrentUrl(), DataUtilities.properties("Url", "home_url"));
     }

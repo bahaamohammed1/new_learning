@@ -1,13 +1,16 @@
 package page_bassis;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import io.qameta.allure.Allure;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.time.Duration;
 import java.util.HashSet;
 import java.util.Random;
@@ -83,6 +86,16 @@ public class Utility {
             genertednumber.add(rendomnumbe);
         }
         return genertednumber;
+
+    }
+
+    public static void takingscreenshot(WebDriver driver, String imageName) throws IOException {
+        String path = "C:\\Users\\user\\IdeaProjects\\new_learn\\Screenshot//";
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File target = new File(path + imageName + ".png");
+        FileUtils.copyFile(src, target);
+        Allure.addAttachment(String.valueOf(src), Files.newInputStream(Path.of(target.getPath())));
+        
 
     }
 }

@@ -1,12 +1,22 @@
-2025-08-31 13:30:28 [main] INFO  Logutilities - write number of selected product : 6
-2025-08-31 13:30:29 [main] INFO  Logutilities - write number of product on card :6
-2025-08-31 13:30:29 [main] INFO  Logutilities - write selected produc in card : 6
-2025-08-31 13:31:01 [main] ERROR Logutilities - Expected condition failed: waiting for visibility of element located by By.className: shopping_cart_badge (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: '4.34.0', revision: '707dcb4246*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10956, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 10bcdb19-8767-468b-831e-1be37931105c
-2025-08-31 13:31:11 [main] INFO  Logutilities - write selected produc in card : 0
-2025-08-31 13:31:21 [main] INFO  Logutilities - write number of selected product : 6
-2025-08-31 13:31:22 [main] INFO  Logutilities - enter mesaga
+
+
+2025-09-02 15:46:43 [main] INFO  Logutilities - write number of selected product : 6
+2025-09-02 15:46:44 [main] INFO  Logutilities - price of product in cardpage:29.99
+2025-09-02 15:46:44 [main] INFO  Logutilities - price of selectedproduct29.99
+2025-09-02 18:04:13 [main] INFO  Logutilities - write number of selected product : 6
+2025-09-02 18:04:14 [main] INFO  Logutilities - write selected produc in card : 6
+2025-09-02 18:04:14 [main] INFO  Logutilities - write number of product on card :6
+2025-09-02 19:14:40 [main] INFO  Logutilities - write number of selected product : 6
+2025-09-02 19:14:41 [main] INFO  Logutilities - price of product in cardpage:29.99
+2025-09-02 19:14:41 [main] INFO  Logutilities - price of selectedproduct29.99
+2025-09-02 20:16:30 [main] INFO  Logutilities - write number of selected product : 6
+2025-09-02 20:16:34 [main] INFO  Logutilities - price of product in cardpage:29.99
+2025-09-02 20:16:34 [main] INFO  Logutilities - price of selectedproduct29.99
+2025-09-02 20:16:37 [main] INFO  Logutilities - write number of selected product : 6
+2025-09-02 20:16:39 [main] INFO  Logutilities - price of product in cardpage:29.99
+2025-09-02 20:16:39 [main] INFO  Logutilities - price of selectedproduct29.99
+2025-09-02 20:17:09 [main] INFO  Logutilities - write number of selected product : 6
+2025-09-02 20:17:11 [main] INFO  Logutilities - price of product in cardpage:29.99
+2025-09-02 20:17:11 [main] INFO  Logutilities - price of selectedproduct29.99
+2025-09-15 19:14:47 [main] INFO  Logutilities - write number of selected product : 6
+2025-09-15 19:16:15 [main] INFO  Logutilities - write number of selected product : 6

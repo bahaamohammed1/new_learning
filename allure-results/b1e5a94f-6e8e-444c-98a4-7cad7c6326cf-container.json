@@ -1,1 +1,0 @@
-{"uuid":"b1e5a94f-6e8e-444c-98a4-7cad7c6326cf","name":"TC04_Checkout.finish","children":["c833df8b-c627-4cce-aa02-99da4ddf5ce7"],"description":"","befores":[],"afters":[{"name":"finish","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1756581393438,"stop":1756581395440}],"start":1756581393438,"stop":1756581395441}

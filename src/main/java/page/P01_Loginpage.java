@@ -24,9 +24,9 @@ public class P01_Loginpage {
         return this;
     }
 
-    public P02_landingpage click() {
+    public P02_Homegpage click() {
         Utility.clickonandwait(driver, clk);
-        return new P02_landingpage(driver);
+        return new P02_Homegpage(driver);
     }
 
 

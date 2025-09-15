@@ -5,7 +5,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.P01_Loginpage;
+import page.P02_Homegpage;
+import page.P03_YourCard;
 import page_bassis.DataUtilities;
+import page_bassis.Utility;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -27,13 +30,15 @@ public class T03_Yourcard {
     @Test
     public void compringofnumberofselectedproducttestcases() throws IOException {
 
-        new P01_Loginpage(driver).enterusername(DataUtilities.getjsondata("ValidData", "username"))
+        String totalpriceonHomepage = new P01_Loginpage(driver).enterusername(DataUtilities.getjsondata("ValidData", "username"))
                 .pasword(DataUtilities.getjsondata("ValidData", "password")).
-                click().clickoncarticon();
-        // Assert.assertTrue(new P02_landingpage(driver).compring());
-        Assert.assertEquals(driver.getCurrentUrl(), DataUtilities.properties("Url", "Yourcard_url"));
+                click().allproduc().getTotalprice();
+        new P02_Homegpage(driver).clickoncarticon();
+        Utility.takingscreenshot(driver, "screnshot");
+        Assert.assertTrue(new P03_YourCard(driver).ComparingPrices(totalpriceonHomepage));
 
-        // Assert.assertEquals(driver.getCurrentUrl(), DataUtilities.properties("Url", "home_url"));
+        Assert.assertEquals(driver.getCurrentUrl(), DataUtilities.properties("Url", "Yourcard_url"));
+        Utility.takingscreenshot(driver, "Yourcard");
     }
 
     @AfterMethod

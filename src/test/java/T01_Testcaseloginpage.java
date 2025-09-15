@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.P01_Loginpage;
 import page_bassis.DataUtilities;
+import page_bassis.Utility;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -28,6 +29,7 @@ public class T01_Testcaseloginpage {
     public void start() throws IOException {
         new P01_Loginpage(driver).enterusername(DataUtilities.getjsondata("ValidData", "username")).pasword(DataUtilities.getjsondata("ValidData", "password")).click();
         Assert.assertEquals(driver.getCurrentUrl(), DataUtilities.properties("Url", "home_url"));
+        Utility.takingscreenshot(driver, "loginImage");
     }
 
     @AfterMethod

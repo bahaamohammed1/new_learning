@@ -2,7 +2,7 @@
 <suite name="LandingSute">
     <test name="Landing test">
         <classes>
-            <class name="T02_landingTest">
+            <class name="T02_HomeTest">
 
             </class>
         </classes>

@@ -5,11 +5,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.P01_Loginpage;
-import page.P02_landingpage;
+import page.P02_Homegpage;
 import page.P04_Checkout;
 import page.P05_Overview;
 import page_bassis.DataUtilities;
 import page_bassis.Logutilities;
+import page_bassis.Utility;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -47,7 +48,7 @@ public class T05_Overview {
                 click().allproduc();
         Logutilities.info("enter mesaga");
         //TODO Clickoncarticon steps
-        new P02_landingpage(driver).clickoncarticon().checkoutcart();
+        new P02_Homegpage(driver).clickoncarticon().checkoutcart();
         Logutilities.debug("enter mesaga");
 
         //TODO filloftextandclickoncheckoutbutton steps
@@ -55,6 +56,7 @@ public class T05_Overview {
         Assert.assertEquals(driver.getCurrentUrl(), DataUtilities.properties("Url", "Checkout"));
         //TODO CHECKOUT PAGE COMPARING
         new P05_Overview(driver).compringpriceof();
+        Utility.takingscreenshot(driver, "overview");
 
 
     }

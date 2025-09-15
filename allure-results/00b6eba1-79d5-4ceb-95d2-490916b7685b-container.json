@@ -1,1 +1,0 @@
-{"uuid":"00b6eba1-79d5-4ceb-95d2-490916b7685b","name":"TC04_Checkout.frist","children":["844fdbdb-6cb5-4a24-8516-ed997c479e32"],"description":"","befores":[{"name":"frist","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1756384611857,"stop":1756384617637}],"afters":[],"start":1756384611856,"stop":1756384617638}

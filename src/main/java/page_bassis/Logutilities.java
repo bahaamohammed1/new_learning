@@ -24,4 +24,5 @@ public class Logutilities {
     public static void debug(String message) {
         logger.debug(message);
     }
+
 }
